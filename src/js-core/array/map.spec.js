@@ -6,7 +6,7 @@
 * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 */
 describe('Array.prototype.map', () => {
-  test('应该能正常使用', () => {
+  test('返回的数组的每项内容应该为原数组每项作用回调后的结果', () => {
     var res = [1, 2, 3].map(item => item * 2)
     expect(res).toStrictEqual([2, 4, 6])
   })

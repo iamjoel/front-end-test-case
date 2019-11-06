@@ -8,6 +8,7 @@
 ## 内容
 * [前端测试的目的](doc/why.md)
 * [黑白盒测试](doc/black-white-test.md)
+* [测试用例注意点](doc/doc/test-case-tip.md)
 * [术语](doc/term.md)
 
 ## 测试要掌握技术
@@ -19,3 +20,8 @@
 * [Jest](https://jestjs.io/zh-Hans/)
 * [Circleci](https://circleci.com/)
 * [Codecov](https://codecov.io/)
+
+## 测试用例参考
+* [Lodash](https://github.com/lodash/lodash/tree/master/test)
+* [moment](https://github.com/moment/moment/tree/develop/src/test/moment)
+* [vue](https://github.com/vuejs/vue/tree/dev/test/unit/features)
