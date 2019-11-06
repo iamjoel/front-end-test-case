@@ -1,6 +1,10 @@
 # 前端测试
-测试的两种目的：
+<p align="center">
+  <a href="https://circleci.com/gh/iamjoel/front-end-test-case/tree/master"><img src="https://img.shields.io/circleci/build/github/iamjoel/front-end-test-case"></a>
+</p>
 
+
+## 测试的目的
 1. 保证代码质量。
 1. 了解代码包含的功能。
 
