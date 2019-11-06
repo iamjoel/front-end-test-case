@@ -7,9 +7,9 @@ test('结果值应该为传入值之和', () => {
   expect(sum(0.1, 2)).toBeCloseTo(2.1)
 })
 
-// test('传入非数字求应该会报错', () => {
-//   function main() {
-//     return sum('a', 2)
-//   }
-//   expect(main).toThrow('参数必须是数字')
-// })
+test('传入非数字求应该会报错', () => {
+  function main() {
+    return sum('a', 2)
+  }
+  expect(main).toThrow('参数必须是数字')
+})
