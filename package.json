@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage && codecov"
+    "test": "jest --coverage && codecov",
+    "jest": "jest"
   },
   "repository": {
     "type": "git",

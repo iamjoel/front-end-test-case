@@ -26,3 +26,8 @@
 * 设计测试用例
 * 会测试异步代码
 * Mock 代码
+
+## 文档
+* [Jest](https://jestjs.io/zh-Hans/)
+* [Circleci](https://circleci.com/)
+* [Codecov](https://codecov.io/)
