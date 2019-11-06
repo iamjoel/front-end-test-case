@@ -2,6 +2,7 @@
 <p align="center">
   <a href="https://circleci.com/gh/iamjoel/front-end-test-case/tree/master"><img src="https://img.shields.io/circleci/build/github/iamjoel/front-end-test-case"></a>
   <a href="https://codecov.io/github/iamjoel/front-end-test-case?branch=master"><img src="https://img.shields.io/codecov/c/github/iamjoel/front-end-test-case/dev.svg" alt="Coverage Status"></a>
+  <img src="https://img.shields.io/github/license/iamjoel/front-end-test-case" alt="">
 </p>
 
 
