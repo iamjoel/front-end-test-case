@@ -1,3 +1,5 @@
 module.exports = {
-  verbose: true
+  verbose: true,
+  "coverageDirectory": "./coverage/",// 测试覆盖率 https://codecov.io/
+  "collectCoverage": true
 }
