@@ -6,7 +6,7 @@ export default function getUserInfo(isFail) {
           name: 'Joel',
           gender: 'man'
         })
-      }, 1000)
+      }, 100)
     } else {
       reject('fail')
     }

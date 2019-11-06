@@ -5,22 +5,10 @@
   <img src="https://img.shields.io/github/license/iamjoel/front-end-test-case" alt="">
 </p>
 
-
-## 测试的目的
-1. 保证代码质量。
-1. 了解代码包含的功能。
-
-## 术语
-* 断言
-* 测试框架和断言库
-* 测试用例
-* 单元测试
-* 集成测试
-* 持续集成
-* 端到端测试
-* 测试覆盖率
-* Mock 和 Stub
-* 形式证明
+## 内容
+* [前端测试的目的](doc/why.md)
+* [黑白盒测试](doc/black-white-test.md)
+* [术语](doc/term.md)
 
 ## 测试要掌握技术
 * 设计测试用例
