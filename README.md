@@ -9,6 +9,7 @@
 * [前端测试的目的](doc/why.md)
 * [黑白盒测试](doc/black-white-test.md)
 * [测试用例注意点](doc/test-case-tip.md)
+* [端到端测试](doc/end-to-end-test.md)
 * [用例目录](doc/case-nav.md)
 * [术语](doc/term.md)
 
