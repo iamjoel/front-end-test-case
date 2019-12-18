@@ -1,5 +1,4 @@
-# vue
-
+# Vue 测试
 ## Project setup
 ```
 yarn install
@@ -7,7 +6,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn dev
 ```
 
 ### Compiles and minifies for production
@@ -27,3 +26,6 @@ yarn test:e2e
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### doc
+* [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)
