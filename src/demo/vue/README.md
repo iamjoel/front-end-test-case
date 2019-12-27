@@ -27,7 +27,7 @@ yarn test:e2e
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### 测试
+### 测试组件
 ```
 const wrapper = shallowMount(Foo, {
   propsData: {
@@ -47,18 +47,69 @@ const wrapper = shallowMount(Foo, {
   stubs: ,
 })
 
-// 属性
-expect(wrapper.props().color).toBe('red')
 
-// DOM 判断
-wrapper.find('.sth').text()
-wrapper.contains('.sth')
 
-// 实例的东东
-wrapper.vm.xxx
+
 
 wrapper.destroy()
 ```
+
+#### 调用实例
+```
+// 实例
+wrapper.vm
+
+// 属性
+expect(wrapper.props().color).toBe('red')
+```
+
+#### 测试输出
+DOM的检查
+```
+wrapper.find('.sth').text()
+wrapper.find('.sth').html()
+wrapper.find('.sth').classes()
+wrapper.find('.sth').element
+
+wrapper.contains('.sth')
+
+// 触发事件
+wrapper.find('.sth').trigger('click')
+wrapper.find('input').trigger('keyup.enter')
+```
+
+与父组件的交互
+```
+wrapper.emitted().事件 // 返回值是 [[参数1, 参数2,....]]
+```
+
+#### router 和 vuex
+```
+import { expect } from 'chai';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import Vuex from 'vuex'
+import VueRouter from 'vue-router';
+import Todos from '@/components/Todos.vue';
+import { storeFactory } from '@/store/factory';
+import { routerFactory } from '@/routes';
+
+describe('Todos', function() {
+  it('should handle route change', function() {
+    const localVue = createLocalVue();
+    localVue.use(Vuex);
+    localVue.use(VueRouter);
+    const store = storeFactory();
+    const router = routerFactory();
+
+    shallowMount(Todos, { localVue, store, router });
+    router.push('/completed');
+
+    expect(store.state.filter).to.eql('completed');
+  });
+});
+```
+
+测试的demo [todoapp-vue](https://github.com/blacksonic/todoapp-vue)
 
 ### doc
 * [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)
